@@ -1,0 +1,69 @@
+type,value,context,confidence,first_seen
+sha256,A83A84A14654EB52EB29B26CC1D899C42B21B99140C9E8F0E0840BAFE35FAB74,APK de SleekRat (sleekrat.apk),high,2026-10-14
+package_name,com.i3163.app,Nombre de paquete de la muestra,high,2026-10-14
+cert_sha256,DFC97E4B9F4735C7927D7E2A3C2ACA6DFED462A0ACFB8EA716DB2CC7148F1CB6,Certificado de firma autofirmado CN=SleekRat,high,2026-10-14
+cert_sha1,DA9562F3FBBB0BB48CFBB04EE0443ABFE0C7FFD9,Certificado de firma autofirmado CN=SleekRat,high,2026-10-14
+string,CN=SleekRat,Subject del certificado de firma,high,2026-10-14
+file_path,/data/local/tmp/sleekratd,Daemon Go nativo (copiado desde assets/bin/),high,2026-10-14
+file_path,/data/local/tmp/sleekratd.json,"Configuracion del daemon (server_host, server_port, use_ssl)",high,2026-10-14
+file_path,/data/local/tmp/sleekratd.log,Log del daemon,high,2026-10-14
+file_path,/data/local/tmp/sleekrat_watchdog.sh,Script watchdog de persistencia,high,2026-10-14
+file_path,/data/local/tmp/sleekrat_watchdog.log,Log del watchdog,high,2026-10-14
+file_path,assets/bin/sleekratd-arm64,Daemon Go embebido en el APK (arm64),high,2026-10-14
+file_path,assets/bin/sleekratd-armv7,Daemon Go embebido en el APK (armv7),high,2026-10-14
+string,setprop persist.adb.tcp.port 5555,Habilita ADB por TCP para la auto-escalada,medium,2026-10-14
+string,settings put secure sleekrat_probe 1,Sonda de permisos shell,high,2026-10-14
+string,SLEEKRAT_WD_VER=6,Version del watchdog embebido en el daemon,high,2026-10-14
+string,keepalive_state/screenshot_stream_should_run,SharedPreferences: archivo/clave,high,2026-10-14
+string,SleekRatNetwork,Tag de logcat (NetworkClient),high,2026-10-14
+string,SleekRatAccessibility,Tag de logcat (AccessibilityControlService),high,2026-10-14
+http_path,/ws,Endpoint WebSocket del C2 (puerto por defecto 8080; C2 inyectado en runtime),low,2026-10-14
+file_path,/opt/1panel/apps/sleek-rat-v2/android/zhurubao/mk_sh,Ruta del builder sobre 1Panel hallada en el config (artefacto de build),medium,2026-10-14
+broadcast_action,com.sleekrat.accessibility.BACK,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.COPY,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.DELETE_TEXT,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.DOUBLE_TAP,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.FIND_AT_COORD,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.FIND_BY_ID,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.FIND_BY_TEXT,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.GESTURE_PATH,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.GET_TOP_ACTIVITY,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.GET_UI_ELEMENTS,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.GET_UI_TREE,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.HOME,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.INPUT_TEXT,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.IPC_COMMAND,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.LOCK_SCREEN,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.LONG_PRESS,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.MASK_DISABLE,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.MASK_ENABLE,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.MUTE,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.NOTIFICATION,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.PASTE,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.POWER,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.QUICK_SETTINGS,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.RECENT,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.RESULT,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.RULES_SYNC,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.RUN_RULE,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.SCREENSHOT,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.SCROLL,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.SELECTOR_CLICK,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.START_STREAM,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.STOP_STREAM,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.SWIPE,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.TAP,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.UI_TREE_CHANGED,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.UI_TREE_FOLLOW_START,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.UI_TREE_FOLLOW_STOP,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.UNLOCK_ABORT,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.UNLOCK_CONFIRMED,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.UNLOCK_MONITOR_START,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.UNLOCK_MONITOR_STOP,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.VOLUME_DOWN,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.VOLUME_UP,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.WAIT_AND_CLICK,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.KEYLOG_EVENT,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.accessibility.SCREENSHOT_FRAME,Broadcast IPC interno de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.action.WAKEUP_CORE,Broadcast keep-alive de SleekRat,high,2026-10-14
+broadcast_action,com.sleekrat.action.KEEP_ALIVE,Broadcast keep-alive de SleekRat,high,2026-10-14

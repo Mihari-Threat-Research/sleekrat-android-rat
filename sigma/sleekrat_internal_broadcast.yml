@@ -1,0 +1,26 @@
+title: SleekRat Internal Broadcast Activity
+id: 9d16e817-5af7-4843-bf16-bd9023400e38
+status: experimental
+description: |
+    Detecta broadcasts internos del RAT Android SleekRat (prefijo com.sleekrat.).
+    La logsource android/broadcast no es estandar en Sigma: requiere un pipeline propio
+    que mapee la telemetria de broadcasts de tu MDM / MTD (o logcat) a los campos action y package.
+references:
+    - https://mihari-intelligence.blogspot.com/2026/10/sleekrat-android-rat-adb-wireless.html
+author: Mihari Threat Research
+date: 2026-10-13
+tags:
+    - attack.privilege-escalation
+    - attack.t1626
+    - attack.credential-access
+    - attack.t1417.001
+logsource:
+    product: android
+    service: broadcast
+detection:
+    selection:
+        action|startswith: 'com.sleekrat.'
+    condition: selection
+falsepositives:
+    - Improbable
+level: critical

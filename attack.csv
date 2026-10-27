@@ -1,0 +1,36 @@
+matrix,tactic,technique_id,technique,status,review_note
+mobile,Initial Access,T1476,Deliver Malicious App via Other Means,deprecated,Referencia historica
+mobile,Execution,T1623.001,Command and Scripting Interpreter: Unix Shell,active,
+mobile,Execution,T1603,Scheduled Task/Job,active,
+mobile,Persistence,T1541,Foreground Persistence,active,
+mobile,Persistence,T1398,Boot or Logon Initialization Scripts,active,Reemplaza a T1402
+mobile,Privilege Escalation,T1626,Abuse Elevation Control Mechanism,active,En el blog figura bajo Persistence; su tactica en ATT&CK es Privilege Escalation
+mobile,Privilege Escalation,T1626.001,Abuse Elevation Control Mechanism: Device Administrator,active,
+mobile,Privilege Escalation,,Abuso de ADB Wireless Debugging,uncatalogued,Sin tecnica equivalente
+mobile,Credential Access,T1417.001,Input Capture: Keylogging,active,
+mobile,Credential Access,T1417.002,Input Capture: GUI Input Capture,active,
+mobile,Discovery,T1426,System Information Discovery,active,
+mobile,Discovery,T1422,System Network Configuration Discovery,active,
+mobile,Discovery,T1430,Location Tracking,active,
+mobile,Collection,T1513,Screen Capture,active,
+mobile,Collection,T1512,Video Capture,active,
+mobile,Collection,T1429,Audio Capture,active,
+mobile,Collection,T1414,Clipboard Data,active,
+mobile,Collection,T1636,Protected User Data,active,SMS / Call Log / Contacts
+mobile,Collection,T1517,Access Notifications,active,
+mobile,Collection,T1533,Data from Local System,active,
+mobile,Collection,T1532,Archive Collected Data,active,
+mobile,Impact,T1446,Device Lockout,review,Verificar estado vigente en ATT&CK Mobile
+mobile,Impact,,Screen Overlay (phishing),uncatalogued,Sin tecnica equivalente
+enterprise,Defense Evasion,T1562.001,Impair Defenses: Disable or Modify Tools,review,ID de Enterprise; candidato Mobile T1629.003
+enterprise,Defense Evasion,T1070.002,Indicator Removal: Clear Logs,review,ID de Enterprise; candidato Mobile T1630
+enterprise,Defense Evasion,T1497,Virtualization/Sandbox Evasion,review,ID de Enterprise; candidato Mobile T1633
+enterprise,Discovery,T1518.001,Software Discovery: Security Software,review,ID de Enterprise; candidato Mobile T1418.001
+enterprise,Credential Access,T1555,Credentials from Password Stores,review,ID de Enterprise; candidato Mobile T1634
+enterprise,Command and Control,T1071.001,Application Layer Protocol,review,ID de Enterprise; candidato Mobile T1437.001 (WebSocket sobre HTTP)
+enterprise,Command and Control,T1571,Non-Standard Port,review,ID de Enterprise sin equivalente directo en Mobile
+enterprise,Command and Control,T1573.001,Encrypted Channel: Symmetric Cryptography,review,ID de Enterprise; candidato Mobile T1521.001
+enterprise,Command and Control,T1090.003,Proxy: Multi-hop Proxy,review,ID de Enterprise; revisar equivalencia
+enterprise,Command and Control,T1105,Ingress Tool Transfer,review,ID de Enterprise; candidato Mobile T1544
+enterprise,Exfiltration,T1041,Exfiltration Over C2 Channel,review,ID de Enterprise; candidato Mobile T1646
+enterprise,Exfiltration,T1567,Exfiltration Over Web Service,review,ID de Enterprise; revisar equivalencia

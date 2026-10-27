@@ -1,0 +1,10 @@
+# Mihari Threat Research - SleekRat Android RAT (TLP:CLEAR) - 2026-10-13
+# Ref: https://mihari-intelligence.blogspot.com/2026/10/sleekrat-android-rat-adb-wireless.html
+# SID 1000001 (bloque SleekRat: 1000001-1000009)
+#
+# Solo detecta ws:// en claro. Con wss:// (TLS) la URI y el header Upgrade van cifrados
+# y la regla requiere inspeccion TLS con terminacion.
+# El C2 no esta embebido en el APK (se inyecta en runtime): regla de hunting, no de bloqueo.
+# http.uri con bsize:3 exige que la ruta sea exactamente "/ws", como construye NetworkClient.
+
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"MIHARI SleekRat Android RAT - handshake WebSocket a /ws (cleartext, hunting)"; flow:established,to_server; http.uri; content:"/ws"; bsize:3; http.header; content:"Upgrade|3a 20|websocket"; nocase; reference:url,mihari-intelligence.blogspot.com/2026/10/sleekrat-android-rat-adb-wireless.html; classtype:trojan-activity; sid:1000001; rev:2; metadata:author Mihari_Threat_Research, created_at 2026_10_13, updated_at 2026_10_27, confidence Low;)

@@ -1,0 +1,3 @@
+# SleekRat Android - Mihari Threat Research - TLP:CLEAR
+# tipo<TAB>valor (sin defang)
+http_path	/ws

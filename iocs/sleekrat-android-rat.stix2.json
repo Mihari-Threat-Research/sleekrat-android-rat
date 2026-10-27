@@ -1,0 +1,308 @@
+{
+  "type": "bundle",
+  "id": "bundle--a2400ccb-cb38-50b9-bda8-9f698d8eb29f",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-27T00:00:00.000Z",
+      "modified": "2026-10-27T00:00:00.000Z",
+      "name": "Mihari Threat Research",
+      "identity_class": "organization",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--3ae974a0-2b45-5670-8ab0-22fb2d571b47",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: sha256",
+      "description": "APK de SleekRat (sleekrat.apk)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:hashes.'SHA-256' = 'a83a84a14654eb52eb29b26cc1d899c42b21b99140c9e8f0e0840bafe35fab74']",
+      "pattern_type": "stix",
+      "confidence": 85,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--867cb290-be60-5a74-bf61-607e8c56bd20",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: package_name",
+      "description": "Nombre de paquete de la muestra",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[software:x_android_package = 'com.i3163.app']",
+      "pattern_type": "stix",
+      "confidence": 85,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--b0714c28-0975-538f-a777-16460474d59f",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: file_path",
+      "description": "Daemon Go nativo (copiado desde assets/bin/)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'sleekratd']",
+      "pattern_type": "stix",
+      "confidence": 85,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--fe730346-13b3-5fb7-be23-aea8703c5309",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: file_path",
+      "description": "Configuracion del daemon (server_host, server_port, use_ssl)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'sleekratd.json']",
+      "pattern_type": "stix",
+      "confidence": 85,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--ff0f6b9a-f718-5eb6-9898-c8623547fa59",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: file_path",
+      "description": "Log del daemon",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'sleekratd.log']",
+      "pattern_type": "stix",
+      "confidence": 85,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--a7cdec2b-73d2-5bcc-9c00-d109ad0c90b0",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: file_path",
+      "description": "Script watchdog de persistencia",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'sleekrat_watchdog.sh']",
+      "pattern_type": "stix",
+      "confidence": 85,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--7a9e7546-9bf8-5365-b703-8b4609b1ba6a",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: file_path",
+      "description": "Log del watchdog",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'sleekrat_watchdog.log']",
+      "pattern_type": "stix",
+      "confidence": 85,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--38af2f7f-e4f1-54ee-8e70-13ef36aa6e52",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: file_path",
+      "description": "Daemon Go embebido en el APK (arm64)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'sleekratd-arm64']",
+      "pattern_type": "stix",
+      "confidence": 85,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--074c33c4-a4b7-54ff-96dc-626ae8207b2e",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: file_path",
+      "description": "Daemon Go embebido en el APK (armv7)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'sleekratd-armv7']",
+      "pattern_type": "stix",
+      "confidence": 85,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--f0f6c527-fb15-5c46-965c-d1f028d4765d",
+      "created_by_ref": "identity--e981ab8a-df7a-5b27-8842-38f8503abb3f",
+      "created": "2026-10-14T00:00:00.000Z",
+      "modified": "2026-10-14T00:00:00.000Z",
+      "valid_from": "2026-10-14T00:00:00.000Z",
+      "name": "sleekrat-android-rat: file_path",
+      "description": "Ruta del builder sobre 1Panel hallada en el config (artefacto de build)",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[file:name = 'mk_sh']",
+      "pattern_type": "stix",
+      "confidence": 60,
+      "labels": [
+        "sleekrat-android-rat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Mihari Intelligence Blog",
+          "url": "https://mihari-intelligence.blogspot.com/"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    }
+  ]
+}
